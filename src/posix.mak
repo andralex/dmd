@@ -122,55 +122,55 @@ else
 endif
 
 SRC = win32.mak posix.mak \
-	mars.c enum.c struct.c dsymbol.c import.c idgen.c impcnvgen.c \
-	identifier.c mtype.c expression.c optimize.c template.h \
-	template.c lexer.c declaration.c cast.c cond.h cond.c link.c \
-	aggregate.h parse.c statement.c constfold.c version.h version.c \
-	inifile.c iasm.c module.c scope.c dump.c init.h init.c attrib.h \
-	attrib.c opover.c class.c mangle.c tocsym.c func.c inline.c \
-	access.c complex_t.h irstate.h irstate.c glue.c msc.c ph.c tk.c \
-	s2ir.c todt.c e2ir.c util.c identifier.h parse.h \
+	mars.cpp enum.cpp struct.cpp dsymbol.cpp import.cpp idgen.cpp impcnvgen.cpp \
+	identifier.cpp mtype.cpp expression.cpp optimize.cpp template.h \
+	template.cpp lexer.cpp declaration.cpp cast.cpp cond.h cond.cpp link.cpp \
+	aggregate.h parse.cpp statement.cpp constfold.cpp version.h version.cpp \
+	inifile.cpp iasm.cpp module.cpp scope.cpp dump.cpp init.h init.cpp attrib.h \
+	attrib.cpp opover.cpp class.cpp mangle.cpp tocsym.cpp func.cpp inline.cpp \
+	access.cpp complex_t.h irstate.h irstate.cpp glue.cpp msc.cpp ph.cpp tk.cpp \
+	s2ir.cpp todt.cpp e2ir.cpp util.cpp identifier.h parse.h \
 	scope.h enum.h import.h mars.h module.h mtype.h dsymbol.h \
-	declaration.h lexer.h expression.h irstate.h statement.h eh.c \
-	utf.h utf.c staticassert.h staticassert.c \
-	typinf.c toobj.c toctype.c tocvdebug.c toelfdebug.c entity.c \
-	doc.h doc.c macro.h macro.c hdrgen.h hdrgen.c arraytypes.h \
-	delegatize.c toir.h toir.c interpret.c traits.c cppmangle.c \
-	builtin.c clone.c lib.h libomf.c libelf.c libmach.c arrayop.c \
-	libmscoff.c \
-	aliasthis.h aliasthis.c json.h json.c unittests.c imphint.c \
-	argtypes.c apply.c sideeffect.c \
-	intrange.h intrange.c canthrow.c \
-	scanmscoff.c ctfe.h ctfeexpr.c \
-	$C/cdef.h $C/cc.h $C/oper.h $C/ty.h $C/optabgen.c \
+	declaration.h lexer.h expression.h irstate.h statement.h eh.cpp \
+	utf.h utf.cpp staticassert.h staticassert.cpp \
+	typinf.cpp toobj.cpp toctype.cpp tocvdebug.cpp toelfdebug.cpp entity.cpp \
+	doc.h doc.cpp macro.h macro.cpp hdrgen.h hdrgen.cpp arraytypes.h \
+	delegatize.cpp toir.h toir.cpp interpret.cpp traits.cpp cppmangle.cpp \
+	builtin.cpp clone.cpp lib.h libomf.cpp libelf.cpp libmach.cpp arrayop.cpp \
+	libmscoff.cpp \
+	aliasthis.h aliasthis.cpp json.h json.cpp unittests.cpp imphint.cpp \
+	argtypes.cpp apply.cpp sideeffect.cpp \
+	intrange.h intrange.cpp canthrow.cpp \
+	scanmscoff.cpp ctfe.h ctfeexpr.cpp \
+	$C/cdef.h $C/cc.h $C/oper.h $C/ty.h $C/optabgen.cpp \
 	$C/global.h $C/code.h $C/type.h $C/dt.h $C/cgcv.h \
 	$C/el.h $C/iasm.h $C/rtlsym.h \
-	$C/bcomplex.c $C/blockopt.c $C/cg.c $C/cg87.c $C/cgxmm.c \
-	$C/cgcod.c $C/cgcs.c $C/cgcv.c $C/cgelem.c $C/cgen.c $C/cgobj.c \
-	$C/cgreg.c $C/var.c $C/strtold.c \
-	$C/cgsched.c $C/cod1.c $C/cod2.c $C/cod3.c $C/cod4.c $C/cod5.c \
-	$C/code.c $C/symbol.c $C/debug.c $C/dt.c $C/ee.c $C/el.c \
-	$C/evalu8.c $C/go.c $C/gflow.c $C/gdag.c \
-	$C/gother.c $C/glocal.c $C/gloop.c $C/newman.c \
-	$C/nteh.c $C/os.c $C/out.c $C/outbuf.c $C/ptrntab.c $C/rtlsym.c \
-	$C/type.c $C/melf.h $C/mach.h $C/mscoff.h $C/bcomplex.h \
+	$C/bcomplex.cpp $C/blockopt.cpp $C/cg.cpp $C/cg87.cpp $C/cgxmm.cpp \
+	$C/cgcod.cpp $C/cgcs.cpp $C/cgcv.cpp $C/cgelem.cpp $C/cgen.cpp $C/cgobj.cpp \
+	$C/cgreg.cpp $C/var.cpp $C/strtold.cpp \
+	$C/cgsched.cpp $C/cod1.cpp $C/cod2.cpp $C/cod3.cpp $C/cod4.cpp $C/cod5.cpp \
+	$C/code.cpp $C/symbol.cpp $C/debug.cpp $C/dt.cpp $C/ee.cpp $C/el.cpp \
+	$C/evalu8.cpp $C/go.cpp $C/gflow.cpp $C/gdag.cpp \
+	$C/gother.cpp $C/glocal.cpp $C/gloop.cpp $C/newman.cpp \
+	$C/nteh.cpp $C/os.cpp $C/out.cpp $C/outbuf.cpp $C/ptrntab.cpp $C/rtlsym.cpp \
+	$C/type.cpp $C/melf.h $C/mach.h $C/mscoff.h $C/bcomplex.h \
 	$C/cdeflnx.h $C/outbuf.h $C/token.h $C/tassert.h \
-	$C/elfobj.c $C/cv4.h $C/dwarf2.h $C/exh.h $C/go.h \
-	$C/dwarf.c $C/dwarf.h $C/aa.h $C/aa.c $C/tinfo.h $C/ti_achar.c \
-	$C/ti_pvoid.c $C/platform_stub.c $C/code_x86.h $C/code_stub.h \
-	$C/machobj.c $C/mscoffobj.c \
-	$C/xmm.h $C/obj.h $C/pdata.c $C/cv8.c \
-	$C/md5.c $C/md5.h \
+	$C/elfobj.cpp $C/cv4.h $C/dwarf2.h $C/exh.h $C/go.h \
+	$C/dwarf.cpp $C/dwarf.h $C/aa.h $C/aa.cpp $C/tinfo.h $C/ti_achar.cpp \
+	$C/ti_pvoid.cpp $C/platform_stub.cpp $C/code_x86.h $C/code_stub.h \
+	$C/machobj.cpp $C/mscoffobj.cpp \
+	$C/xmm.h $C/obj.h $C/pdata.cpp $C/cv8.cpp \
+	$C/md5.cpp $C/md5.h \
 	$(TK)/filespec.h $(TK)/mem.h $(TK)/list.h $(TK)/vec.h \
-	$(TK)/filespec.c $(TK)/mem.c $(TK)/vec.c $(TK)/list.c \
-	$(ROOT)/root.h $(ROOT)/root.c $(ROOT)/array.c \
-	$(ROOT)/rmem.h $(ROOT)/rmem.c $(ROOT)/port.h $(ROOT)/port.c \
-	$(ROOT)/gnuc.h $(ROOT)/gnuc.c $(ROOT)/man.c \
-	$(ROOT)/stringtable.h $(ROOT)/stringtable.c \
-	$(ROOT)/response.c $(ROOT)/async.h $(ROOT)/async.c \
-	$(ROOT)/aav.h $(ROOT)/aav.c \
-	$(ROOT)/longdouble.h $(ROOT)/longdouble.c \
-	$(ROOT)/speller.h $(ROOT)/speller.c \
+	$(TK)/filespec.cpp $(TK)/mem.cpp $(TK)/vec.cpp $(TK)/list.cpp \
+	$(ROOT)/root.h $(ROOT)/root.cpp $(ROOT)/array.cpp \
+	$(ROOT)/rmem.h $(ROOT)/rmem.cpp $(ROOT)/port.h $(ROOT)/port.cpp \
+	$(ROOT)/gnuc.h $(ROOT)/gnuc.cpp $(ROOT)/man.cpp \
+	$(ROOT)/stringtable.h $(ROOT)/stringtable.cpp \
+	$(ROOT)/response.cpp $(ROOT)/async.h $(ROOT)/async.cpp \
+	$(ROOT)/aav.h $(ROOT)/aav.cpp \
+	$(ROOT)/longdouble.h $(ROOT)/longdouble.cpp \
+	$(ROOT)/speller.h $(ROOT)/speller.cpp \
 	$(TARGET_CH)
 
 
@@ -180,532 +180,532 @@ dmd: $(DMD_OBJS)
 	$(ENVP) $(HOST_CC) -o dmd $(MODEL_FLAG) $(COV) $(DMD_OBJS) $(LDFLAGS)
 
 clean:
-	rm -f $(DMD_OBJS) dmd optab.o id.o impcnvgen idgen id.c id.h \
-	impcnvtab.c optabgen debtab.c optab.c cdxxx.c elxxx.c fltables.c \
-	tytab.c core \
+	rm -f $(DMD_OBJS) dmd optab.o id.o impcnvgen idgen id.cpp id.h \
+	impcnvtab.cpp optabgen debtab.cpp optab.cpp cdxxx.cpp elxxx.cpp fltables.cpp \
+	tytab.cpp core \
 	*.cov *.gcda *.gcno
 
 ######## optabgen generates some source
 
-optabgen: $C/optabgen.c $C/cc.h $C/oper.h
+optabgen: $C/optabgen.cpp $C/cc.h $C/oper.h
 	$(ENVP) $(CC) $(MFLAGS) $< -o optabgen
 	./optabgen
 
-optabgen_output = debtab.c optab.c cdxxx.c elxxx.c fltables.c tytab.c
+optabgen_output = debtab.cpp optab.cpp cdxxx.cpp elxxx.cpp fltables.cpp tytab.cpp
 $(optabgen_output) : optabgen
 
 ######## idgen generates some source
 
-idgen_output = id.h id.c
+idgen_output = id.h id.cpp
 $(idgen_output) : idgen
 
-idgen : idgen.c
-	$(ENVP) $(CC) idgen.c -o idgen
+idgen : idgen.cpp
+	$(ENVP) $(CC) idgen.cpp -o idgen
 	./idgen
 
 ######### impcnvgen generates some source
 
-impcnvtab_output = impcnvtab.c
+impcnvtab_output = impcnvtab.cpp
 $(impcnvtab_output) : impcnvgen
 
-impcnvgen : mtype.h impcnvgen.c
-	$(ENVP) $(CC) $(CFLAGS) impcnvgen.c -o impcnvgen
+impcnvgen : mtype.h impcnvgen.cpp
+	$(ENVP) $(CC) $(CFLAGS) impcnvgen.cpp -o impcnvgen
 	./impcnvgen
 
 #########
 
 $(DMD_OBJS) : $(idgen_output) $(optabgen_output) $(impcnvgen_output)
 
-aa.o: $C/aa.c $C/aa.h $C/tinfo.h
+aa.o: $C/aa.cpp $C/aa.h $C/tinfo.h
 	$(CC) -c $(MFLAGS) -I. $<
 
-aav.o: $(ROOT)/aav.c
+aav.o: $(ROOT)/aav.cpp
 	$(CC) -c $(GFLAGS) -I$(ROOT) $<
 
-access.o: access.c
+access.o: access.cpp
 	$(CC) -c $(CFLAGS) $<
 
-aliasthis.o: aliasthis.c
+aliasthis.o: aliasthis.cpp
 	$(CC) -c $(CFLAGS) $<
 
-apply.o: apply.c
+apply.o: apply.cpp
 	$(CC) -c $(CFLAGS) $<
 
-argtypes.o: argtypes.c
+argtypes.o: argtypes.cpp
 	$(CC) -c $(CFLAGS) $<
 
-array.o: $(ROOT)/array.c
+array.o: $(ROOT)/array.cpp
 	$(CC) -c $(GFLAGS) -I$(ROOT) $<
 
-arrayop.o: arrayop.c
+arrayop.o: arrayop.cpp
 	$(CC) -c $(CFLAGS) $<
 
-async.o: $(ROOT)/async.c
+async.o: $(ROOT)/async.cpp
 	$(CC) -c $(GFLAGS) -I$(ROOT) $<
 
-attrib.o: attrib.c
+attrib.o: attrib.cpp
 	$(CC) -c $(CFLAGS) $<
 
-bcomplex.o: $C/bcomplex.c
+bcomplex.o: $C/bcomplex.cpp
 	$(CC) -c $(MFLAGS) $<
 
-blockopt.o: $C/blockopt.c
+blockopt.o: $C/blockopt.cpp
 	$(CC) -c $(MFLAGS) $<
 
-builtin.o: builtin.c
+builtin.o: builtin.cpp
 	$(CC) -c $(CFLAGS) $<
 
-canthrow.o: canthrow.c
+canthrow.o: canthrow.cpp
 	$(CC) -c $(CFLAGS) $<
 
-cast.o: cast.c
+cast.o: cast.cpp
 	$(CC) -c $(CFLAGS) $<
 
-cg.o: $C/cg.c fltables.c
+cg.o: $C/cg.cpp fltables.cpp
 	$(CC) -c $(MFLAGS) -I. $<
 
-cg87.o: $C/cg87.c
+cg87.o: $C/cg87.cpp
 	$(CC) -c $(MFLAGS) $<
 
-cgcod.o: $C/cgcod.c
+cgcod.o: $C/cgcod.cpp
 	$(CC) -c $(MFLAGS) -I. $<
 
-cgcs.o: $C/cgcs.c
+cgcs.o: $C/cgcs.cpp
 	$(CC) -c $(MFLAGS) $<
 
-cgcv.o: $C/cgcv.c
+cgcv.o: $C/cgcv.cpp
 	$(CC) -c $(MFLAGS) $<
 
-cgelem.o: $C/cgelem.c $C/rtlsym.h
+cgelem.o: $C/cgelem.cpp $C/rtlsym.h
 	$(CC) -c $(MFLAGS) -I. $<
 
-cgen.o: $C/cgen.c $C/rtlsym.h
+cgen.o: $C/cgen.cpp $C/rtlsym.h
 	$(CC) -c $(MFLAGS) $<
 
-cgobj.o: $C/cgobj.c
+cgobj.o: $C/cgobj.cpp
 	$(CC) -c $(MFLAGS) $<
 
-cgreg.o: $C/cgreg.c
+cgreg.o: $C/cgreg.cpp
 	$(CC) -c $(MFLAGS) $<
 
-cgsched.o: $C/cgsched.c $C/rtlsym.h
+cgsched.o: $C/cgsched.cpp $C/rtlsym.h
 	$(CC) -c $(MFLAGS) $<
 
-cgxmm.o: $C/cgxmm.c
+cgxmm.o: $C/cgxmm.cpp
 	$(CC) -c $(MFLAGS) $<
 
-class.o: class.c
+class.o: class.cpp
 	$(CC) -c $(CFLAGS) $<
 
-clone.o: clone.c
+clone.o: clone.cpp
 	$(CC) -c $(CFLAGS) $<
 
-cod1.o: $C/cod1.c $C/rtlsym.h
+cod1.o: $C/cod1.cpp $C/rtlsym.h
 	$(CC) -c $(MFLAGS) $<
 
-cod2.o: $C/cod2.c $C/rtlsym.h
+cod2.o: $C/cod2.cpp $C/rtlsym.h
 	$(CC) -c $(MFLAGS) $<
 
-cod3.o: $C/cod3.c $C/rtlsym.h
+cod3.o: $C/cod3.cpp $C/rtlsym.h
 	$(CC) -c $(MFLAGS) $<
 
-cod4.o: $C/cod4.c
+cod4.o: $C/cod4.cpp
 	$(CC) -c $(MFLAGS) $<
 
-cod5.o: $C/cod5.c
+cod5.o: $C/cod5.cpp
 	$(CC) -c $(MFLAGS) $<
 
-code.o: $C/code.c
+code.o: $C/code.cpp
 	$(CC) -c $(MFLAGS) $<
 
-constfold.o: constfold.c
+constfold.o: constfold.cpp
 	$(CC) -c $(CFLAGS) $<
 
-ctfeexpr.o: ctfeexpr.c ctfe.h
+ctfeexpr.o: ctfeexpr.cpp ctfe.h
 	$(CC) -c $(CFLAGS) $<
 
-irstate.o: irstate.c irstate.h
+irstate.o: irstate.cpp irstate.h
 	$(CC) -c $(MFLAGS) -I$(ROOT) $<
 
-csymbol.o: $C/symbol.c
+csymbol.o: $C/symbol.cpp
 	$(CC) -c $(MFLAGS) $< -o $@
 
-cond.o: cond.c
+cond.o: cond.cpp
 	$(CC) -c $(CFLAGS) $<
 
-cppmangle.o: cppmangle.c
+cppmangle.o: cppmangle.cpp
 	$(CC) -c $(CFLAGS) $<
 
-cv8.o: $C/cv8.c
+cv8.o: $C/cv8.cpp
 	$(CC) -c $(MFLAGS) $<
 
-debug.o: $C/debug.c
+debug.o: $C/debug.cpp
 	$(CC) -c $(MFLAGS) -I. $<
 
-declaration.o: declaration.c
+declaration.o: declaration.cpp
 	$(CC) -c $(CFLAGS) $<
 
-delegatize.o: delegatize.c
+delegatize.o: delegatize.cpp
 	$(CC) -c $(CFLAGS) $<
 
-doc.o: doc.c
+doc.o: doc.cpp
 	$(CC) -c $(CFLAGS) $<
 
-dsymbol.o: dsymbol.c
+dsymbol.o: dsymbol.cpp
 	$(CC) -c $(CFLAGS) $<
 
-dt.o: $C/dt.c $C/dt.h
+dt.o: $C/dt.cpp $C/dt.h
 	$(CC) -c $(MFLAGS) $<
 
-dump.o: dump.c
+dump.o: dump.cpp
 	$(CC) -c $(CFLAGS) $<
 
-dwarf.o: $C/dwarf.c $C/dwarf.h
+dwarf.o: $C/dwarf.cpp $C/dwarf.h
 	$(CC) -c $(MFLAGS) -I. $<
 
-e2ir.o: e2ir.c $C/rtlsym.h expression.h toir.h
+e2ir.o: e2ir.cpp $C/rtlsym.h expression.h toir.h
 	$(CC) -c $(MFLAGS) -I$(ROOT) $<
 
-ee.o: $C/ee.c
+ee.o: $C/ee.cpp
 	$(CC) -c $(MFLAGS) $<
 
-eh.o: eh.c $C/cc.h $C/code.h $C/type.h $C/dt.h
+eh.o: eh.cpp $C/cc.h $C/code.h $C/type.h $C/dt.h
 	$(CC) -c $(MFLAGS) $<
 
-el.o: $C/el.c $C/rtlsym.h $C/el.h
+el.o: $C/el.cpp $C/rtlsym.h $C/el.h
 	$(CC) -c $(MFLAGS) $<
 
-elfobj.o: $C/elfobj.c
+elfobj.o: $C/elfobj.cpp
 	$(CC) -c $(MFLAGS) $<
 
-entity.o: entity.c
+entity.o: entity.cpp
 	$(CC) -c $(CFLAGS) $<
 
-enum.o: enum.c
+enum.o: enum.cpp
 	$(CC) -c $(CFLAGS) $<
 
-evalu8.o: $C/evalu8.c
+evalu8.o: $C/evalu8.cpp
 	$(CC) -c $(MFLAGS) $<
 
-expression.o: expression.c expression.h
+expression.o: expression.cpp expression.h
 	$(CC) -c $(CFLAGS) $<
 
-func.o: func.c
+func.o: func.cpp
 	$(CC) -c $(CFLAGS) $<
 
-gdag.o: $C/gdag.c
+gdag.o: $C/gdag.cpp
 	$(CC) -c $(MFLAGS) $<
 
-gflow.o: $C/gflow.c
+gflow.o: $C/gflow.cpp
 	$(CC) -c $(MFLAGS) $<
 
-#globals.o: globals.c
+#globals.o: globals.cpp
 #	$(CC) -c $(CFLAGS) $<
 
-glocal.o: $C/glocal.c $C/rtlsym.h
+glocal.o: $C/glocal.cpp $C/rtlsym.h
 	$(CC) -c $(MFLAGS) $<
 
-gloop.o: $C/gloop.c
+gloop.o: $C/gloop.cpp
 	$(CC) -c $(MFLAGS) $<
 
-glue.o: glue.c $(CH) $C/rtlsym.h mars.h module.h
+glue.o: glue.cpp $(CH) $C/rtlsym.h mars.h module.h
 	$(CC) -c $(MFLAGS) -I$(ROOT) $<
 
-gnuc.o: $(ROOT)/gnuc.c $(ROOT)/gnuc.h
+gnuc.o: $(ROOT)/gnuc.cpp $(ROOT)/gnuc.h
 	$(CC) -c $(GFLAGS) $<
 
-go.o: $C/go.c
+go.o: $C/go.cpp
 	$(CC) -c $(MFLAGS) $<
 
-gother.o: $C/gother.c
+gother.o: $C/gother.cpp
 	$(CC) -c $(MFLAGS) $<
 
-hdrgen.o: hdrgen.c
+hdrgen.o: hdrgen.cpp
 	$(CC) -c $(CFLAGS) $<
 
-iasm.o: iasm.c $(CH) $C/iasm.h
+iasm.o: iasm.cpp $(CH) $C/iasm.h
 	$(CC) -c $(MFLAGS) -I$(ROOT) -fexceptions $<
 
-id.o: id.c id.h
+id.o: id.cpp id.h
 	$(CC) -c $(CFLAGS) $<
 
-identifier.o: identifier.c
+identifier.o: identifier.cpp
 	$(CC) -c $(CFLAGS) $<
 
-impcnvtab.o: impcnvtab.c mtype.h
+impcnvtab.o: impcnvtab.cpp mtype.h
 	$(CC) -c $(CFLAGS) -I$(ROOT) $<
 
-imphint.o: imphint.c
+imphint.o: imphint.cpp
 	$(CC) -c $(CFLAGS) $<
 
-import.o: import.c
+import.o: import.cpp
 	$(CC) -c $(CFLAGS) $<
 
-inifile.o: inifile.c
+inifile.o: inifile.cpp
 	$(CC) -c $(CFLAGS) $<
 
-init.o: init.c
+init.o: init.cpp
 	$(CC) -c $(CFLAGS) $<
 
-inline.o: inline.c
+inline.o: inline.cpp
 	$(CC) -c $(CFLAGS) $<
 
-interpret.o: interpret.c ctfe.h
+interpret.o: interpret.cpp ctfe.h
 	$(CC) -c $(CFLAGS) $<
 
-intrange.o: intrange.h intrange.c
-	$(CC) -c $(CFLAGS) intrange.c
+intrange.o: intrange.h intrange.cpp
+	$(CC) -c $(CFLAGS) intrange.cpp
 
-json.o: json.c
+json.o: json.cpp
 	$(CC) -c $(CFLAGS) $<
 
-lexer.o: lexer.c
+lexer.o: lexer.cpp
 	$(CC) -c $(CFLAGS) $<
 
-libelf.o: libelf.c $C/melf.h
+libelf.o: libelf.cpp $C/melf.h
 	$(CC) -c $(CFLAGS) -I$C $<
 
-libmach.o: libmach.c $C/mach.h
+libmach.o: libmach.cpp $C/mach.h
 	$(CC) -c $(CFLAGS) -I$C $<
 
-libmscoff.o: libmscoff.c $C/mscoff.h
+libmscoff.o: libmscoff.cpp $C/mscoff.h
 	$(CC) -c $(CFLAGS) -I$C $<
 
-link.o: link.c
+link.o: link.cpp
 	$(CC) -c $(CFLAGS) $<
 
-machobj.o: $C/machobj.c
+machobj.o: $C/machobj.cpp
 	$(CC) -c $(MFLAGS) -I. $<
 
-macro.o: macro.c
+macro.o: macro.cpp
 	$(CC) -c $(CFLAGS) $<
 
-man.o: $(ROOT)/man.c
+man.o: $(ROOT)/man.cpp
 	$(CC) -c $(GFLAGS) -I$(ROOT) $<
 
-mangle.o: mangle.c
+mangle.o: mangle.cpp
 	$(CC) -c $(CFLAGS) $<
 
-mars.o: mars.c
+mars.o: mars.cpp
 	$(CC) -c $(CFLAGS) $<
 
-rmem.o: $(ROOT)/rmem.c
+rmem.o: $(ROOT)/rmem.cpp
 	$(CC) -c $(GFLAGS) -I$(ROOT) $<
 
-module.o: module.c
+module.o: module.cpp
 	$(CC) -c $(CFLAGS) -I$C $<
 
-mscoffobj.o: $C/mscoffobj.c $C/mscoff.h
+mscoffobj.o: $C/mscoffobj.cpp $C/mscoff.h
 	$(CC) -c $(MFLAGS) $<
 
-msc.o: msc.c $(CH) mars.h
+msc.o: msc.cpp $(CH) mars.h
 	$(CC) -c $(MFLAGS) $<
 
-mtype.o: mtype.c
+mtype.o: mtype.cpp
 	$(CC) -c $(CFLAGS) $<
 
-nteh.o: $C/nteh.c $C/rtlsym.h
+nteh.o: $C/nteh.cpp $C/rtlsym.h
 	$(CC) -c $(MFLAGS) $<
 
-opover.o: opover.c
+opover.o: opover.cpp
 	$(CC) -c $(CFLAGS) $<
 
-optimize.o: optimize.c
+optimize.o: optimize.cpp
 	$(CC) -c $(CFLAGS) $<
 
-os.o: $C/os.c
+os.o: $C/os.cpp
 	$(CC) -c $(MFLAGS) $<
 
-out.o: $C/out.c
+out.o: $C/out.cpp
 	$(CC) -c $(MFLAGS) $<
 
-outbuf.o: $C/outbuf.c $C/outbuf.h
+outbuf.o: $C/outbuf.cpp $C/outbuf.h
 	$(CC) -c $(MFLAGS) $<
 
-parse.o: parse.c
+parse.o: parse.cpp
 	$(CC) -c $(CFLAGS) $<
 
-pdata.o: $C/pdata.c
+pdata.o: $C/pdata.cpp
 	$(CC) -c $(MFLAGS) $<
 
-ph.o: ph.c
+ph.o: ph.cpp
 	$(CC) -c $(MFLAGS) $<
 
-platform_stub.o: $C/platform_stub.c
+platform_stub.o: $C/platform_stub.cpp
 	$(CC) -c $(MFLAGS) $<
 
-port.o: $(ROOT)/port.c
+port.o: $(ROOT)/port.cpp
 	$(CC) -c $(GFLAGS) -I$(ROOT) $<
 
-ptrntab.o: $C/ptrntab.c $C/iasm.h
+ptrntab.o: $C/ptrntab.cpp $C/iasm.h
 	$(CC) -c $(MFLAGS) $<
 
-response.o: $(ROOT)/response.c
+response.o: $(ROOT)/response.cpp
 	$(CC) -c $(GFLAGS) -I$(ROOT) $<
 
-root.o: $(ROOT)/root.c
+root.o: $(ROOT)/root.cpp
 	$(CC) -c $(GFLAGS) -I$(ROOT) $<
 
-rtlsym.o: $C/rtlsym.c $C/rtlsym.h
+rtlsym.o: $C/rtlsym.cpp $C/rtlsym.h
 	$(CC) -c $(MFLAGS) $<
 
-s2ir.o: s2ir.c $C/rtlsym.h statement.h
+s2ir.o: s2ir.cpp $C/rtlsym.h statement.h
 	$(CC) -c $(MFLAGS) -I$(ROOT) $<
 
-scope.o: scope.c
+scope.o: scope.cpp
 	$(CC) -c $(CFLAGS) $<
 
-sideeffect.o: sideeffect.c
+sideeffect.o: sideeffect.cpp
 	$(CC) -c $(CFLAGS) $<
 
-speller.o: $(ROOT)/speller.c
+speller.o: $(ROOT)/speller.cpp
 	$(CC) -c $(GFLAGS) -I$(ROOT) $<
 
-statement.o: statement.c
+statement.o: statement.cpp
 	$(CC) -c $(CFLAGS) $<
 
-staticassert.o: staticassert.c staticassert.h
+staticassert.o: staticassert.cpp staticassert.h
 	$(CC) -c $(CFLAGS) $<
 
-stringtable.o: $(ROOT)/stringtable.c
+stringtable.o: $(ROOT)/stringtable.cpp
 	$(CC) -c $(GFLAGS) -I$(ROOT) $<
 
-strtold.o: $C/strtold.c
+strtold.o: $C/strtold.cpp
 	$(CC) -c -I$(ROOT) $<
 
-struct.o: struct.c
+struct.o: struct.cpp
 	$(CC) -c $(CFLAGS) $<
 
-template.o: template.c
+template.o: template.cpp
 	$(CC) -c $(CFLAGS) $<
 
-ti_achar.o: $C/ti_achar.c $C/tinfo.h
+ti_achar.o: $C/ti_achar.cpp $C/tinfo.h
 	$(CC) -c $(MFLAGS) -I. $<
 
-ti_pvoid.o: $C/ti_pvoid.c $C/tinfo.h
+ti_pvoid.o: $C/ti_pvoid.cpp $C/tinfo.h
 	$(CC) -c $(MFLAGS) -I. $<
 
-tk.o: tk.c
+tk.o: tk.cpp
 	$(CC) -c $(MFLAGS) $<
 
-tocsym.o: tocsym.c $(CH) mars.h module.h
+tocsym.o: tocsym.cpp $(CH) mars.h module.h
 	$(CC) -c $(MFLAGS) -I$(ROOT) $<
 
-toctype.o: toctype.c $(CH) $C/rtlsym.h mars.h module.h
+toctype.o: toctype.cpp $(CH) $C/rtlsym.h mars.h module.h
 	$(CC) -c $(MFLAGS) -I$(ROOT) $<
 
-todt.o: todt.c mtype.h expression.h $C/dt.h
+todt.o: todt.cpp mtype.h expression.h $C/dt.h
 	$(CC) -c $(MFLAGS) -I$(ROOT) $<
 
-toelfdebug.o: toelfdebug.c $(CH) mars.h
+toelfdebug.o: toelfdebug.cpp $(CH) mars.h
 	$(CC) -c $(MFLAGS) -I$(ROOT) $<
 
-toir.o: toir.c $C/rtlsym.h expression.h toir.h
+toir.o: toir.cpp $C/rtlsym.h expression.h toir.h
 	$(CC) -c $(MFLAGS) -I$(ROOT) $<
 
-toobj.o: toobj.c $(CH) mars.h module.h
+toobj.o: toobj.cpp $(CH) mars.h module.h
 	$(CC) -c $(MFLAGS) -I$(ROOT) $<
 
-traits.o: traits.c
+traits.o: traits.cpp
 	$(CC) -c $(CFLAGS) $<
 
-type.o: $C/type.c
+type.o: $C/type.cpp
 	$(CC) -c $(MFLAGS) $<
 
-typinf.o: typinf.c $(CH) mars.h module.h mtype.h
+typinf.o: typinf.cpp $(CH) mars.h module.h mtype.h
 	$(CC) -c $(MFLAGS) -I$(ROOT) $<
 
-util.o: util.c
+util.o: util.cpp
 	$(CC) -c $(MFLAGS) $<
 
-utf.o: utf.c utf.h
+utf.o: utf.cpp utf.h
 	$(CC) -c $(CFLAGS) $<
 
-unittests.o: unittests.c
+unittests.o: unittests.cpp
 	$(CC) -c $(CFLAGS) $<
 
-var.o: $C/var.c optab.c
+var.o: $C/var.cpp optab.cpp
 	$(CC) -c $(MFLAGS) -I. $<
 
-version.o: version.c
+version.o: version.cpp
 	$(CC) -c $(CFLAGS) $<
 
 ######################################################
 
 gcov:
-	gcov access.c
-	gcov aliasthis.c
-	gcov apply.c
-	gcov arrayop.c
-	gcov attrib.c
-	gcov builtin.c
-	gcov canthrow.c
-	gcov cast.c
-	gcov class.c
-	gcov clone.c
-	gcov cond.c
-	gcov constfold.c
-	gcov declaration.c
-	gcov delegatize.c
-	gcov doc.c
-	gcov dsymbol.c
-	gcov dump.c
-	gcov e2ir.c
-	gcov eh.c
-	gcov entity.c
-	gcov enum.c
-	gcov expression.c
-	gcov func.c
-	gcov glue.c
-	gcov iasm.c
-	gcov identifier.c
-	gcov imphint.c
-	gcov import.c
-	gcov inifile.c
-	gcov init.c
-	gcov inline.c
-	gcov interpret.c
-	gcov ctfeexpr.c
-	gcov irstate.c
-	gcov json.c
-	gcov lexer.c
+	gcov access.cpp
+	gcov aliasthis.cpp
+	gcov apply.cpp
+	gcov arrayop.cpp
+	gcov attrib.cpp
+	gcov builtin.cpp
+	gcov canthrow.cpp
+	gcov cast.cpp
+	gcov class.cpp
+	gcov clone.cpp
+	gcov cond.cpp
+	gcov constfold.cpp
+	gcov declaration.cpp
+	gcov delegatize.cpp
+	gcov doc.cpp
+	gcov dsymbol.cpp
+	gcov dump.cpp
+	gcov e2ir.cpp
+	gcov eh.cpp
+	gcov entity.cpp
+	gcov enum.cpp
+	gcov expression.cpp
+	gcov func.cpp
+	gcov glue.cpp
+	gcov iasm.cpp
+	gcov identifier.cpp
+	gcov imphint.cpp
+	gcov import.cpp
+	gcov inifile.cpp
+	gcov init.cpp
+	gcov inline.cpp
+	gcov interpret.cpp
+	gcov ctfeexpr.cpp
+	gcov irstate.cpp
+	gcov json.cpp
+	gcov lexer.cpp
 ifeq (OSX,$(TARGET))
-	gcov libmach.c
+	gcov libmach.cpp
 else
-	gcov libelf.c
+	gcov libelf.cpp
 endif
-	gcov link.c
-	gcov macro.c
-	gcov mangle.c
-	gcov mars.c
-	gcov module.c
-	gcov msc.c
-	gcov mtype.c
-	gcov opover.c
-	gcov optimize.c
-	gcov parse.c
-	gcov ph.c
-	gcov scope.c
-	gcov sideeffect.c
-	gcov statement.c
-	gcov staticassert.c
-	gcov s2ir.c
-	gcov struct.c
-	gcov template.c
-	gcov tk.c
-	gcov tocsym.c
-	gcov todt.c
-	gcov toobj.c
-	gcov toctype.c
-	gcov toelfdebug.c
-	gcov typinf.c
-	gcov utf.c
-	gcov util.c
-	gcov version.c
-	gcov intrange.c
+	gcov link.cpp
+	gcov macro.cpp
+	gcov mangle.cpp
+	gcov mars.cpp
+	gcov module.cpp
+	gcov msc.cpp
+	gcov mtype.cpp
+	gcov opover.cpp
+	gcov optimize.cpp
+	gcov parse.cpp
+	gcov ph.cpp
+	gcov scope.cpp
+	gcov sideeffect.cpp
+	gcov statement.cpp
+	gcov staticassert.cpp
+	gcov s2ir.cpp
+	gcov struct.cpp
+	gcov template.cpp
+	gcov tk.cpp
+	gcov tocsym.cpp
+	gcov todt.cpp
+	gcov toobj.cpp
+	gcov toctype.cpp
+	gcov toelfdebug.cpp
+	gcov typinf.cpp
+	gcov utf.cpp
+	gcov util.cpp
+	gcov version.cpp
+	gcov intrange.cpp
 
-#	gcov hdrgen.c
-#	gcov tocvdebug.c
+#	gcov hdrgen.cpp
+#	gcov tocvdebug.cpp
 
 ######################################################
 
